@@ -9,22 +9,29 @@
 <body>
 <script>
 let i = 1;
-let suma = 0;
-while(i<=5);
-num = parseInt(prompt("Digitw un numero"));
-suma = suma + num;
-document.write("<p> numero ingresado: "+ num + "</p>");
+let num = 0;
+let contadornegativos;
+let contadorpositivos;
 
-if (num<0){
+while(i<=5){
+        num = parseInt(prompt("Digite un numero"));
 
-    contadorpositivos++;
+        document.write("<p> numero ingresado: "+ num + "</p>");
 
-}else if(num<0){
-    contadornegativos;
+        if (num<0){
+
+            contadorpositivos++;
+
+        }else if(num<0){
+            contadornegativos++;
+
+
+
+       
+        }
+ i++;
 
 }
-
-i++;
 
 document.write("<br>");
 document.write("<p>cantidad positivos: " + contadornegativos + "</p>");
